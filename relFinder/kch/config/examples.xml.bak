@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data>
+	<example>
+		<endpoint>seoul_kch</endpoint>
+		<object>
+			<label>동국대지도</label>
+			<uri>http://lod.datahub.kr/id/kch/Treasure-No-1538</uri>
+		</object>
+		<object>
+			<label>성세창 제시 하관계회도</label>
+			<uri>http://lod.datahub.kr/id/kch/Treasure-No-869</uri>
+		</object>
+	</example>
+	
+</data>

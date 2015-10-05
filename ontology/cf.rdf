@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+  xmlns:kch="http://lod.datahub.kr/def/kch/"
+  xmlns:cf="http://lod.datahub.kr/def/cf/"
+  xmlns:ore="http://www.openarchives.org/ore/terms/"
+  xmlns:edm="http://www.europeana.eu/schemas/edm/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:schema="http://schema.org/"
+>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf.rdf">
+    <foaf:primaryTopic rdf:resource="http://lod.datahub.kr/def/cf"/>
+    <dcterms:rightsHolder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</dcterms:rightsHolder>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-03-04</dcterms:modified>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-22</dcterms:created>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</dc:creator>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/us/"/>
+    <cc:attributionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</cc:attributionName>
+	<dc:title>문화시설 어휘</dc:title>
+	<rdfs:comment xml:lang="ko">서울시에 위치하고 있는 각종 문화시설에 대한 정보를 표현하기 위한 온톨로지</rdfs:comment>
+</rdf:Description>
+
+<!-- Properties -->
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/facilityCode">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">facility code</rdfs:label>
+	<rdfs:label xml:lang="ko">문화시설 코드</rdfs:label>
+	<rdfs:comment xml:lang="ko">시스템 코드 (서울시 열린 데이터 광장에서 저장되고 있는 레거시 데이터와 연결을 위한 용도로 사용)</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/serial">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">serial</rdfs:label>
+	<rdfs:label xml:lang="ko">문화시설 일련번호</rdfs:label>
+	<rdfs:comment xml:lang="ko">시스템 코드 (서울시 열린 데이터 광장에서 저장되고 있는 레거시 데이터와 연결을 위한 용도로 사용)</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/managementCode">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Management code</rdfs:label>
+	<rdfs:label xml:lang="ko">문화시설 관리코드</rdfs:label>
+	<rdfs:comment xml:lang="ko">시스템 코드 (서울시 열린 데이터 광장에서 저장되고 있는 레거시 데이터와 연결을 위한 용도로 사용)</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/subjectCode">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Subject code</rdfs:label>
+	<rdfs:label xml:lang="ko">문화시설 주제분류 코드</rdfs:label>
+	<rdfs:comment xml:lang="ko">시스템 코드 (서울시 열린 데이터 광장에서 저장되고 있는 레거시 데이터와 연결을 위한 용도로 사용)</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/themeCode">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Theme code</rdfs:label>
+	<rdfs:label xml:lang="ko">문화시설 주제 코드</rdfs:label>
+	<rdfs:comment xml:lang="ko">시스템 코드 (서울시 열린 데이터 광장에서 저장되고 있는 레거시 데이터와 연결을 위한 용도로 사용)</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/san">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">san</rdfs:label>
+	<rdfs:label xml:lang="ko">주소의 산지 여부</rdfs:label>
+	<rdfs:comment xml:lang="ko">주소체계에서 사용될 수 있는 산지 여부를 표현하기 위해 사용</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/bonBun">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Bon Bun</rdfs:label>
+	<rdfs:label xml:lang="ko">주소의 본번</rdfs:label>
+	<rdfs:comment xml:lang="ko">시스템 코드 (서울시 열린 데이터 광장에서 저장되고 있는 레거시 데이터와 연결을 위한 용도로 사용)</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/buBun">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Bu Bun</rdfs:label>
+	<rdfs:label xml:lang="ko">주소의 부번</rdfs:label>
+	<rdfs:comment xml:lang="ko">시스템 코드 (서울시 열린 데이터 광장에서 저장되고 있는 레거시 데이터와 연결을 위한 용도로 사용)</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/streetNameAddress">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Street Name Address</rdfs:label>
+	<rdfs:label xml:lang="ko">도로명 주소</rdfs:label>
+	<rdfs:comment xml:lang="ko">행정안전부가 2012년 부터 시행하기 위해 만든 새로운 주소 체계로 도로에 이름을 붙이고 주택, 건물에는 도로를 따라 순차적으로 번호를 붙여 도로명과 건물번호에 의해 표기하는 새로운 주소를 말한다. 종전 지번 주소와 시ㆍ군ㆍ구 및 읍ㆍ면까지는 동일하지만 리ㆍ지번, 아파트 이름 대신 도로명과 건물번호를 사용한다. 도로는 폭에 따라 대로(폭 40m, 8차로 이상), 로(40∼12m, 2∼7차로), 길(기타 도로)로 나뉜다. 한글주소는 문자열 마지막에 @ko 를 영문주소는 @en 을 붙임 - e.g. "서울특별시 종로구 청와대로 1"@ko </rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/landLotNumberAddress">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Land-lot Address</rdfs:label>
+	<rdfs:label xml:lang="ko">지번 주소</rdfs:label>
+	<rdfs:comment xml:lang="ko">한글주소는 문자열 마지막에 @ko 를 영문주소는 @en 을 붙임 - e.g. "서울특별시 종로구 세종로 1번지"@ko</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/openingHour">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Opening Hour</rdfs:label>
+	<rdfs:label xml:lang="ko">운영시간</rdfs:label>
+	<rdfs:comment xml:lang="ko">관람시간, 오픈시간</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/entryFee">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Entry fee</rdfs:label>
+	<rdfs:label xml:lang="ko">관람료</rdfs:label>
+	<rdfs:comment xml:lang="ko">연극, 영화, 운동 경기, 미술품 등을 구경하기 위하여 내는 요금</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/dayOff">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">Day off</rdfs:label>
+	<rdfs:label xml:lang="ko">휴무일</rdfs:label>
+	<rdfs:comment xml:lang="ko">직무를 보지 않고 쉬는 날</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/closed">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">closed</rdfs:label>
+	<rdfs:label xml:lang="ko">휴관일</rdfs:label>
+	<rdfs:comment xml:lang="ko">문화시설이 일반에 대한 공개 업무를 쉬는 날</rdfs:comment>
+	<rdfs:range rdf:resource="http:/schema.org/DayOfWeek"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/seats">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">A nummber of seats</rdfs:label>
+	<rdfs:label xml:lang="ko">좌석수</rdfs:label>
+	<rdfs:comment xml:lang="ko">특정 시설에 존재하는 자리의 개수</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/x-coord">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">coordinate x</rdfs:label>
+	<rdfs:label xml:lang="ko">X 좌표</rdfs:label>
+	<rdfs:comment xml:lang="ko">좌표를 구성하는 수들 가운데서 가로 방향으로 어떤 점의 위치를 지시하는 좌표</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/cf/y-coord">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="en">coordinate y</rdfs:label>
+	<rdfs:label xml:lang="ko">Y 좌표</rdfs:label>
+	<rdfs:comment xml:lang="ko">좌표를 구성하는 수들 가운데서 세로 방향으로 어떤 점의 위치를 지시하는 좌표</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+	<rdfs:isDefinedBy rdf:resource="http://lod.datahub.kr/def/cf/"/>
+</rdf:Description>
+
+
+</rdf:RDF>

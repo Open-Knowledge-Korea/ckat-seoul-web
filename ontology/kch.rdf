@@ -1,0 +1,2180 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+  xmlns:kch="http://lod.datahub.kr/def/kch/"
+  xmlns:cf="http://lod.datahub.kr/def/cf/"
+  xmlns:ore="http://www.openarchives.org/ore/terms/"
+  xmlns:edm="http://www.europeana.eu/schemas/edm/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:schema="http://schema.org/"
+>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch.rdf">
+    <foaf:primaryTopic rdf:resource="http://lod.datahub.kr/def/"/>
+    <dcterms:rightsHolder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</dcterms:rightsHolder>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-03-04</dcterms:modified>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-22</dcterms:created>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</dc:creator>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/us/"/>
+    <cc:attributionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</cc:attributionName>
+    <dc:title>한국의 문화재</dc:title>
+	<rdfs:comment xml:lang="ko">대한민국의 문화재를 표현하기 위한 온톨로지</rdfs:comment>
+</rdf:Description>
+
+<!-- Properties -->
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/designated">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="ko">지정일</rdfs:label>
+	<rdfs:label xml:lang="en">Designated Date</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/manager">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="ko">관리자</rdfs:label>
+	<rdfs:label xml:lang="en">manager</rdfs:label>
+	<rdfs:comment xml:lang="ko">관리자, 관리기관</rdfs:comment>
+	<rdfs:range rdf:resource="http://lod.datahub.kr/def/kch/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/department">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="ko">관리부서</rdfs:label>
+	<rdfs:label xml:lang="en">Department</rdfs:label>
+	<rdfs:comment xml:lang="ko">문화재의 관리부서</rdfs:comment>
+	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/quantity">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="ko">수량</rdfs:label>
+	<rdfs:label xml:lang="en">quantity</rdfs:label>
+	<rdfs:comment xml:lang="ko">문화재의 수량</rdfs:comment>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/clip">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="ko">비디오</rdfs:label>
+	<rdfs:label xml:lang="en">Video clips</rdfs:label>
+	<rdfs:comment xml:lang="ko">문화재의 비디오 영상 자료</rdfs:comment>
+	<rdfs:range rdf:resource="http://purl.org/dc/terms/MediaType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/qrCode">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:label xml:lang="ko">QR 코드</rdfs:label>
+	<rdfs:label xml:lang="en">QR Code</rdfs:label>
+	<rdfs:comment xml:lang="ko">흑백 격자 무늬 패턴으로 정보를 나타내는 매트릭스 형식의 이차원 바코드이다. QR코드는 주로 일본,한국,영국,미국등에서 많이 사용되며 명칭은 덴소 웨이브의 등록상표 Quick Response에서 유래하였다. 종래에 많이 쓰이던 바코드의 용량 제한을 극복하고 그 형식과 내용을 확장한 2차원의 바코드로 종횡의 정보를 가져서 숫자외에 문자의 데이터를 저장할 수 있다. 보통 디지털 카메라나 전용 스캐너로 읽어들여 활용한다.</rdfs:comment>
+</rdf:Description>
+
+<!-- KCH_Category -->  
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/KoreaCultureProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:label xml:lang="ko">한국의 문화재</rdfs:label>
+	<rdfs:label xml:lang="en">KoreaCultureProperty</rdfs:label>
+	<schema:name xml:lang="en">Korea Culture Property</schema:name>
+	<schema:name xml:lang="ko">한국의 문화재</schema:name>
+	<dc:title xml:lang="en">Korea Culture Property</dc:title>
+	<dc:title xml:lang="ko">한국의 문화재</dc:title>
+	<rdfs:comment xml:lang="ko">문화재는 조상들이 남긴 건물·조각·공예품·서적·서예·고문서 등의 유물·유적 가운데 역사적·예술적 가치가 높거나 역사 연구에 자료가 되는 유형문화재, 연주·무용·음악·공예·기술 등에서 역사적·예술적 가치가 높은 무형문화재 및 기념물·민속자료 등을 통틀어 일컫는 말이다. 대한민국에서는 문화재를 아끼고 보호하여 후세에 잘 물려주기 위해 1962년에 문화재보호법을 제정하였다</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/NationalTreasure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">국보</rdfs:label>
+	<rdfs:label xml:lang="en">National Treasure</rdfs:label>
+	<schema:name xml:lang="en">National Treasure</schema:name>
+	<schema:name xml:lang="ko">국보</schema:name>
+	<dc:title xml:lang="en">National Treasure</dc:title>
+	<dc:title xml:lang="ko">국보</dc:title>
+	<rdfs:comment xml:lang="ko">대한민국에서, 건축물이나 유물 등의 유형 문화재 가운데에 중요한 가치를 가져 보물로 지정될 만한 문화재 가운데에서 인류문화적으로 가치가 크고 유례가 드문 것, 독특하고 희귀한 것 등으로 인정되어 따로 지정된 문화유산을
+말한다</rdfs:comment>
+	<rdfs:comment xml:lang="en">Heritage of a rare and significant value in terms of human culture and with an equivalent value to "Treasures" described below</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/Treasure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">보물</rdfs:label>
+	<rdfs:label xml:lang="en">Treasures</rdfs:label>
+	<schema:name xml:lang="en">Treasure</schema:name>
+	<schema:name xml:lang="ko">보물</schema:name>
+	<dc:title xml:lang="en">Treasure</dc:title>
+	<dc:title xml:lang="ko">보물</dc:title>
+	<rdfs:comment xml:lang="ko">목조 건축물, 석조 건축물, 전적류, 서적류, 고문서, 회화, 조각류, 공예품, 고고자료, 무구(巫具) 등 대한민국의 유형문화재 가운데 중요한 것을 국가에서 지정한 것이다. 국보와 보물의 중요성과 가치 우열을 가리기는 어렵지만, 국보급의 문화재가 그 분야, 그 시대를 대표하는 유일무이한 것이라면 보물급에 속하는 문화재는 그와 유사한 문화재로서 대한민국 문화를 대표하는 유물이라고 할 수 있다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Tangible cultural heritage of important value, such as historic architecture, ancient books and documents, paintings, sculpture, handicraft, archeological materials and armory</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/HistoricSite">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">사적</rdfs:label>
+	<rdfs:label xml:lang="en">Historic Sites</rdfs:label>
+	<schema:name xml:lang="en">Historic Site</schema:name>
+	<schema:name xml:lang="ko">사적</schema:name>
+	<dc:title xml:lang="en">Historic Site</dc:title>
+	<dc:title xml:lang="ko">사적</dc:title>
+	<rdfs:comment xml:lang="ko">기념물 가운데 선사시대의 유적 및 고분, 정치 및 전쟁에 관한 유적, 제사ㆍ신앙에 관한 유적, 산업ㆍ교통ㆍ토목에 관한 유적, 교육ㆍ사회사업 관계 유적, 분묘와 비석 등의 유적으로 중요한 것을 말한다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Places and facilities of great historic and academic values that are specially commemorable (eg: prehistoric sites, fortresses, ancient tombs, kiln sites, dolmens, temple sites and shell mounds)</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/ScenicSite">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">명승</rdfs:label>
+	<rdfs:label xml:lang="en">Scenic Site</rdfs:label>
+	<schema:name xml:lang="en">Scenic Site</schema:name>
+	<schema:name xml:lang="ko">명승</schema:name>
+	<dc:title xml:lang="en">Scenic Site</dc:title>
+	<dc:title xml:lang="ko">명승</dc:title>
+	<rdfs:comment xml:lang="ko"> 지방지정문화재에 속하는 국가지정문화재로, 문화재청에서 경치가 뛰어난 지역을 대상으로 지정한다. 문화재보호법 시행규칙에 따르면 유명한 건물이나 꽃·나무·새·짐승·물고기·벌레 등의 서식지, 유명한 경승지·산악·협곡·해협·곶·심연·폭포·호수·급류 등 특색있는 하천·고원·평원·구릉·온천지 등을 “명승”으로 규정하고 있다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Places of natural beauty with great historic, artistic or scenic values, which features distinctive uniqueness and rarity originated from their formation processes</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/NaturalMonument">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">천연기념물</rdfs:label>
+	<rdfs:label xml:lang="en">Natural Monument</rdfs:label>
+	<schema:name xml:lang="en">Natural Monument</schema:name>
+	<schema:name xml:lang="ko">천연기념물</schema:name>
+	<dc:title xml:lang="en">Natural Monuments</dc:title>
+	<dc:title xml:lang="ko">천연 기념물</dc:title>
+	<rdfs:comment xml:lang="ko">법률로서 보호가 지정된 자연물이다. '천연기념물'이라는 말을 처음으로 사용하고 법으로 정한 나라는 독일이다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Animals, plants, minerals, caves, geological features, biological products and special natural phenomena, carrying great historic, cultural, scientific, aesthetic or academic values, through which the history of a nation or the secrets to the creation of the earth can be identified or revealed</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/ImportantIntangibleCulturalHeritage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">중요무형문화재</rdfs:label>
+	<rdfs:label xml:lang="en">Important Intangible Cultural Heritage</rdfs:label>
+	<schema:name xml:lang="en">Important Intangible Cultural Heritage</schema:name>
+	<schema:name xml:lang="ko">중요무형문화재</schema:name>
+	<dc:title xml:lang="en">Important Intangible Cultural Heritage</dc:title>
+	<dc:title xml:lang="ko">중요무형문화재</dc:title>
+	<rdfs:comment xml:lang="ko">보존 가치가 크다고 인정되는 문화적 소산 가운데 국가에서 문화재로서 지정한 것을 말한다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Intangible cultural heritage, such as drama, music, dance and craftsmanship, carrying great historic, artistic or academic values</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/ImportantFolkloreMaterial">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">중요민속문화재</rdfs:label>
+	<rdfs:label xml:lang="en">Important Folklore Material</rdfs:label>
+	<schema:name xml:lang="en">Important Folklore Material</schema:name>
+	<schema:name xml:lang="ko">중요민속문화재</schema:name>
+	<dc:title xml:lang="en">Important Folklore Material</dc:title>
+	<dc:title xml:lang="ko">중요민속문화재</dc:title>
+	<rdfs:comment xml:lang="ko">대한민국에서 의식주, 사회생활, 민속, 신앙 등의 일상생활에서 사용되는 것 가운데 상대적으로 중요하다고 생각되는 것이다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Clothing, implements and houses used for daily life and businesses, transportation and communications, entertainment and social life, and religious or annual events, that are highly valuable for the understanding of the transition in people's lifestyle and mores</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/TangibleCulturalHeritage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">유형문화재</rdfs:label>
+	<rdfs:label xml:lang="en">Province Tangible Cultural Heritage</rdfs:label>
+	<schema:name xml:lang="en">Province Tangible Cultural Heritage</schema:name>
+	<schema:name xml:lang="ko">유형문화재</schema:name>
+	<dc:title xml:lang="en">Province Tangible Cultural Heritage</dc:title>
+	<dc:title xml:lang="ko">유형문화재</dc:title>
+	<rdfs:comment xml:lang="ko">형태가 없는 무형문화재와는 달리 건조물·회화·조각·공예품·서적·서예 등 일정한 형태를 갖춘 것으로, 역사적·예술적 가치가 높은 것을 말한다. 유형문화재 가운데 중요한 것은 보물로 지정하며, 보물 가운데 더욱 높은 가치를 지닌 것을 국보로 지정한다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Tangible cultural products of great historic and artistic values, such as buildings, classical records and books, ancient documents, paintings, sculpture and handicraft; and archeological materials corresponding thereto</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/IntangibleCulturalHeritage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">무형문화재</rdfs:label>
+	<rdfs:label xml:lang="en">Province Intangible Cultural Heritage</rdfs:label>
+	<schema:name xml:lang="en">Province Intangible Cultural Heritage</schema:name>
+	<schema:name xml:lang="ko">무형문화재</schema:name>
+	<dc:title xml:lang="en">Province Intangible Cultural Heritage</dc:title>
+	<dc:title xml:lang="ko">무형문화재</dc:title>
+	<rdfs:comment xml:lang="ko">일정한 형태가 없는 문화재를 말한다.역사적으로나 예술적으로 높은 가치와 문화적 기능을 지닌 사람을 인간문화재로 지정하여, 그 기능을 후계자에게 전수할 수 있도록 하며, 그 비용은 국가가 부담한다. 무형문화재의 종류로는 연극·음악·무용·공예·무예·의식·놀이 등이 있다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Intangible cultural products of great historic and artistic values, such as drama, music, dance and craftsmanship</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/Monument">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">기념물</rdfs:label>
+	<rdfs:label xml:lang="en">Monument</rdfs:label>
+	<schema:name xml:lang="en">Monument</schema:name>
+	<schema:name xml:lang="ko">기념물</schema:name>
+	<dc:title xml:lang="en">Monument</dc:title>
+	<dc:title xml:lang="ko">기념물</dc:title>
+	<rdfs:comment xml:lang="ko">특정한 사람, 사건 등을 기념하기 위해 세운 건축물이다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Historic sites of great historic or academic values, such as shell mounds, ancient tombs, fortress sits, palace sites and relic sites; scenic sites of great artistic or aesthetic values; and animals (including habitats, breeding places and resting places), plants (including natural growing sites), minerals and caves of great academic values</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/FolkloreMaterial">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">민속문화재</rdfs:label>
+	<rdfs:label xml:lang="en">Province Folklore Material</rdfs:label>
+	<schema:name xml:lang="en">Province Folklore Material</schema:name>
+	<schema:name xml:lang="ko">민속문화재</schema:name>
+	<dc:title xml:lang="en">Province Folklore Material</dc:title>
+	<dc:title xml:lang="ko">민속문화재</dc:title>
+	<rdfs:comment xml:lang="ko">어떠한 민족의 기본적인 생활문화를 특징적으로 나타내는 것이다. 대한민국의 경우, 무형민속자료는 중요무형문화재로 지정되어 있으므로 유형민속자료만 다룬다. 즉 의식주에 관한 것, 생업(生業)에 관한 것, 교통·운수·통신에 관한 것, 교역에 관한 것, 사회생활에 관한 것, 민속예능·오락·유희에 관한 것 등 8개 분야로 나뉘어 지정된다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Clothing, implements and houses used for daily life, religious or annual events and so on, that are indispensable for the understanding of the transition in people's lifestyle and mores</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/CulturalHeritageMaterial">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">문화재자료</rdfs:label>
+	<rdfs:label xml:lang="en">Cultural Heritage Material</rdfs:label>
+	<schema:name xml:lang="en">Cultural Heritage Material</schema:name>
+	<schema:name xml:lang="ko">문화재자료</schema:name>
+	<dc:title xml:lang="en">Cultural Heritage Material</dc:title>
+	<dc:title xml:lang="ko">문화재자료</dc:title>
+	<rdfs:comment xml:lang="ko">시·도지사가 시도지정문화재로 지정되지 아니한 문화재 중 향토문화 보존상 필요하다고 인정하여 시·도 조례에 의하여 지정한 문화재를 지칭한다.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Among the heritages that are not designated as State-, City- or Province-designated heritages, those significant for the regional culture and thus in need of preservation are designated as the "Cultural Heritage Material" in accordance with municipal or provincial regulations.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://lod.datahub.kr/def/kch/RegisteredCulturalHeritage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/kch/KoreaCultureProperty"/>
+	<rdfs:label xml:lang="ko">등록문화재</rdfs:label>
+	<rdfs:label xml:lang="en">Registered Cultural Heritage</rdfs:label>
+	<schema:name xml:lang="en">Registered Cultural Heritage</schema:name>
+	<schema:name xml:lang="ko">등록문화재</schema:name>
+	<dc:title xml:lang="en">Registered Cultural Heritage</dc:title>
+	<dc:title xml:lang="ko">등록문화재</dc:title>
+	<rdfs:comment xml:lang="ko">지정문화재가 아닌 근·현대시기에 형성된 건조물 또는 기념이될 만한 시설물 형태의 문화재 중에서 보존가치가 큰 것을 말한다</rdfs:comment>
+	<rdfs:comment xml:lang="en">The Registered Cultural Heritage refers to architectural structures or monumental facilities of early modern or modern times, that have significant values and thus need to be preserved.</rdfs:comment>
+</rdf:Description>
+
+<!-- CHA Classification -->  
+<!-- Korean Cultural Heritage Administration SKOS Vocabulrary -->  
+  <skos:ConceptScheme rdf:about="http://lod.datahub.kr/def/kch/conceptScheme">
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/자연유산">
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/천연보호구역">
+	  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">천연자원 보호를 위한 구역</rdfs:comment>
+            <skos:prefLabel xml:lang="en">sanctuary</skos:prefLabel>
+	    <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/자연과학성">
+                <skos:prefLabel xml:lang="en">natural science</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">자연과학성</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/문화및자연결합성">
+                <skos:prefLabel xml:lang="en">harmony of culture and nature</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">문화및자연결합성</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="ko">천연보호구역</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:prefLabel xml:lang="en">Natural Heritage</skos:prefLabel>
+        <skos:prefLabel xml:lang="ko">자연유산</skos:prefLabel>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/천연기념물">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/지구과학기념물">
+                <skos:prefLabel xml:lang="en">earth science monument</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">지구과학기념물</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">natural monument</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">천연기념물</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/생물과학기념물">
+                <skos:prefLabel xml:lang="en">biotechnology monument</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">생물과학기념물</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/대표성">
+                    <skos:prefLabel xml:lang="ko">대표성</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/생물상">
+                    <skos:prefLabel xml:lang="ko">생물상</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/유전학">
+	  	  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">유전 현상을 연구하는 학문</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">유전학</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/문화역사기념물">
+                <skos:prefLabel xml:lang="en">cultural history monument</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">문화역사기념물</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민속">
+	  	  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">민간 생활과 결부된 신앙, 습관, 풍속, 전설, 기술, 전승 문화 등을 통틀어 이르는 말</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">민속</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/기념">
+                    <skos:prefLabel xml:lang="ko">기념</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/역사">
+	  	  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">인류 사회의 변천과 흥망의 과정 또는 그 기록</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">역사</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/종교">
+  	  	  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">신이나 초자연적인 절대자 또는 힘에 대한 믿음을 통하여 인간 생활의 고뇌를 해결하고 삶의 궁극적인 의미를 추구하는 문화 체계</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">종교</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/명승">
+  	  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">훌륭하고 이름난 경치</rdfs:comment>
+            <skos:prefLabel xml:lang="en">scenic sites</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">명승</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/자연경관">
+  	  	  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">사람의 손을 더하지 아니한 자연 그대로의 지리적 경관</rdfs:comment>
+                <skos:prefLabel xml:lang="en">natural scene</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">자연경관</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/지형지질경관">
+                    <skos:prefLabel xml:lang="ko">지형지질경관</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/역사문화경관">
+                <skos:prefLabel xml:lang="en">cultural history monument</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">역사문화경관</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/문화경관">
+                <skos:prefLabel xml:lang="en">cultural scene</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">문화경관</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/문화경관_건물지">
+                    <skos:prefLabel xml:lang="ko">문화경관_건물지</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">건물지</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/유물">
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">선대의 인류가 후대에 남긴 물건</rdfs:comment>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/불교조각">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/건칠조">
+                <skos:prefLabel xml:lang="en">lacquer statue</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">건칠조</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">buddhist statue</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">불교조각</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/소조">
+	      	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">찰흙, 석고 따위를 빚거나 덧붙여서 만드는 조형 미술</rdfs:comment>
+                <skos:prefLabel xml:lang="en">molding</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">소조</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/소조_보살상">
+                    <skos:prefLabel xml:lang="ko">소조_보살상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">보살상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/소조_불상">
+                    <skos:prefLabel xml:lang="ko">소조_불상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">불상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/명부상">
+                    <skos:prefLabel xml:lang="ko">명부상</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/나한상">
+		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">나한을 새긴 상</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">나한상</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/금속조">
+                <skos:prefLabel xml:lang="en">metal statue</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">금속조</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/금속조_불상">
+                    <skos:prefLabel xml:lang="ko">금속조_불상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">불상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/금속조_보살상">
+                    <skos:prefLabel xml:lang="ko">금속조_보살상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">보살상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석조">
+                <skos:prefLabel xml:lang="en">stone statue</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">석조</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석조_명부상">
+                    <skos:prefLabel xml:lang="ko">석조_명부상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">명부상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석조_불상">
+                    <skos:prefLabel xml:lang="ko">석조_불상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">불상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석조_보살상">
+                    <skos:prefLabel xml:lang="ko">석조_보살상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">보살상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목조">
+                <skos:prefLabel xml:lang="en">wooden statue</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">목조</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목조_나한상">
+                    <skos:prefLabel xml:lang="ko">목조_나한상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">나한상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목조_명부상">
+                    <skos:prefLabel xml:lang="ko">목조_명부상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">명부상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목조_보살상">
+                    <skos:prefLabel xml:lang="ko">목조_보살상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">보살상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목조_불상">
+                    <skos:prefLabel xml:lang="ko">목조_불상</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">불상</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:prefLabel xml:lang="en">Relics</skos:prefLabel>
+        <skos:prefLabel xml:lang="ko">유물</skos:prefLabel>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/기타종교회화">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/유교회화">
+                <skos:prefLabel xml:lang="en">confucian painting</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">유교회화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">other painting</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">기타종교회화</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무속화">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">무당과 관련된 풍속 그림</rdfs:comment>
+                <skos:prefLabel xml:lang="en">musok painting</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">무속화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/기타종교조각">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민간신앙조각">
+                <skos:prefLabel xml:lang="en">folk religion statue</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">민간신앙조각</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">statue relate to other religion</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">기타종교조각</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/유교조각">
+                <skos:prefLabel xml:lang="en">confucian statue</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">유교조각</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/불교회화">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/벽화">
+                <skos:prefLabel xml:lang="en">mural</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">벽화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사경화">
+                <skos:prefLabel xml:lang="en">Buddhist painting to hang outside</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">사경화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/판화">
+                <skos:prefLabel xml:lang="en">print</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">판화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">Buddhist painting</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">불교회화</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/괘불화">
+                <skos:prefLabel xml:lang="en">picture of budda to hang on the wall</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">괘불화</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/삼신불도">
+                    <skos:prefLabel xml:lang="ko">삼신불도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사불회도">
+                    <skos:prefLabel xml:lang="ko">사불회도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석가불도">
+                    <skos:prefLabel xml:lang="ko">석가불도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/탱화">
+	      	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">부처, 보살, 성현들을 그려서 벽에 거는 그림</rdfs:comment>
+                <skos:prefLabel xml:lang="en">copying of scriptures sutra copying</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">탱화</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/보살도">
+		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">보살이 불과를 구하려고 닭는 길</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">보살도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/불도">
+                    <skos:prefLabel xml:lang="ko">불도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/탱화_기타">
+                    <skos:prefLabel xml:lang="ko">탱화_기타</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">기타</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/나한조사도">
+                    <skos:prefLabel xml:lang="ko">나한조사도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/생활공예">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/복식공예">
+                <skos:prefLabel xml:lang="en">fabric craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">복식공예</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/의복">
+		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">몸을 싸서 가리거나 보호하기 위하여 피륙 따위로 만들어 입는 물건</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">의복</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/관모">
+		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">벼슬아치들이 쓰던 모자</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">관모</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/옥석공예">
+     		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">옥돌을 이용하여 물건을 만드는 기술에 관한 재주</rdfs:comment>
+                <skos:prefLabel xml:lang="en">jade craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">옥석공예</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/옥공예">
+                    <skos:prefLabel xml:lang="ko">옥공예</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석공예">
+                    <skos:prefLabel xml:lang="ko">석공예</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">craft</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/지공예">
+                <skos:prefLabel xml:lang="en">paper craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">지공예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대공예">
+                <skos:prefLabel xml:lang="en">modern craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대공예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/초고공예">
+                <skos:prefLabel xml:lang="en">chogo craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">초고공예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/칠공예">
+                <skos:prefLabel xml:lang="en">lacquerer craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">칠공예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/토도자공예">
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/도기">
+  		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">붉은 진흙으로 만들어 볕에 말리거나 약간 구운 다음, 오짓물을 입혀 다시 구운 그릇</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">도기</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/토기">
+  		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">진흙으로 만들어 유약을 바르지 아니하고 구운 그릇</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">토기</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/분청">
+                    <skos:prefLabel xml:lang="ko">분청</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/백자">
+    		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">순백색의 바탕흙 위에 투명한 유약을 발라 구워 만든 자기</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">백자</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:prefLabel xml:lang="en">earthenware craft</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/와전">
+                    <skos:prefLabel xml:lang="ko">와전</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/청자">
+      		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">푸른 빛깔의 자기</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">청자</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:prefLabel xml:lang="ko">토도자공예</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/녹유">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">구리에 납을 매용제로 하여 녹색을 띠게 만든 저화유 또는 그것을 칠하여 만든 도자기 제품</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">녹유</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/금속공예">
+                <skos:prefLabel xml:lang="en">metal craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">금속공예</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무구">
+    		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">무당이 굿을 할 때 사용하는 여러 가지 도구. 신ㆍ칼ㆍ작두ㆍ방울ㆍ부채 따위의 도구와, 장구ㆍ자바라 따위의 악기</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">무구</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/생활용구">
+                    <skos:prefLabel xml:lang="ko">생활용구</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/마구">
+                    <skos:prefLabel xml:lang="ko">마구</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무속구">
+                    <skos:prefLabel xml:lang="ko">무속구</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/장신구">
+      		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">몸치장을 하는 데 쓰는 물건. 반지, 귀고리, 노리개, 목걸이, 팔찌, 비녀, 브로치 등의 물건</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">장신구</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/청동용구">
+                    <skos:prefLabel xml:lang="ko">청동용구</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="ko">생활공예</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/화각장공예">
+                <skos:prefLabel xml:lang="en">hwagak craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">화각장공예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목공예">
+                <skos:prefLabel xml:lang="en">wooden craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">목공예</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/가구류">
+                    <skos:prefLabel xml:lang="ko">가구류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/불교공예">
+            <skos:prefLabel xml:lang="en">buddhist craft</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">불교공예</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/복장품">
+                <skos:prefLabel xml:lang="en">bokjangpum</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">복장품</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/불교공예_기타">
+                <skos:prefLabel xml:lang="en">other</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">불교공예_기타</skos:prefLabel>
+                <skos:altLabel xml:lang="ko">기타</skos:altLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/의식법구">
+                <skos:prefLabel xml:lang="en">ceremonial tool</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">의식법구</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/장엄구">
+                <skos:prefLabel xml:lang="en">jangumgu</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">장엄구</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/공양구">
+                <skos:prefLabel xml:lang="en">offering tool</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">공양구</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사리장치">
+                <skos:prefLabel xml:lang="en">equipment of relic of the buddha</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">사리장치</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/과학기술">
+            <skos:prefLabel xml:lang="ko">과학기술</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/이동운송기술">
+                <skos:prefLabel xml:lang="en">tools for transport &amp; delivery</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">이동운송기술</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/놀이유희용구">
+                <skos:prefLabel xml:lang="en">tool for play</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">놀이유희용구</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/놀이기구">
+                    <skos:prefLabel xml:lang="ko">놀이기구</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무기병기류">
+                <skos:prefLabel xml:lang="en">weaponry</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">무기병기류</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/병장기류">
+                    <skos:prefLabel xml:lang="ko">병장기류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무기무구류">
+                    <skos:prefLabel xml:lang="ko">무기무구류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/계측교역기술용구">
+                <skos:prefLabel xml:lang="en">measurement tool</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">계측교역기술용구</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/도량형">
+                    <skos:prefLabel xml:lang="ko">도량형</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/생업기술용구">
+                <skos:prefLabel xml:lang="en">industry technology relic</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">생업기술용구</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/공예기술용구">
+                <skos:prefLabel xml:lang="en">tool for craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">공예기술용구</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/금속공예용구">
+                    <skos:prefLabel xml:lang="ko">금속공예용구</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/자연과학유물">
+                <skos:prefLabel xml:lang="en">science technology relic</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">자연과학유물</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/천문지리기구">
+                <skos:prefLabel xml:lang="en">astronomy geography tool</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">천문지리기구</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/천문">
+                    <skos:prefLabel xml:lang="ko">천문</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/지리">
+                    <skos:prefLabel xml:lang="ko">지리</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">science technology</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/음식제조용구">
+                <skos:prefLabel xml:lang="en">tool for food production</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">음식제조용구</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/인쇄기술용구">
+                <skos:prefLabel xml:lang="en">tool for print</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">인쇄기술용구</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/인쇄기기">
+                    <skos:prefLabel xml:lang="ko">인쇄기기</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/선사유물">
+                <skos:prefLabel xml:lang="en">prehistoric relic</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">선사유물</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/일반회화">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민화">
+      		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">실용을 목적으로 무명인이 그렸던 그림. 산수, 화조 따위의 정통 회화를 모방한 것으로 소박하고 파격적이며 익살스러운 것이 특징</rdfs:comment>
+                <skos:prefLabel xml:lang="ko">민화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/풍속화">
+     		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">그 시대의 세정과 풍습을 그린 그림</rdfs:comment>
+		<skos:prefLabel xml:lang="en">folk painting</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">풍속화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/인물화">
+      		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">사람을 주제로 하여 그린 그림. 초상화, 나체화 따위가 있다</rdfs:comment>
+                <skos:prefLabel xml:lang="en">figure painting</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">인물화</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/초상화">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">사람의 얼굴을 중심으로 그린 그림</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">초상화</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/영모화조화">
+                <skos:prefLabel xml:lang="en">picture of bird and animal</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">영모화조화</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/영모화">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">새나 짐승을 그린 그림</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">영모화</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/화조화">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">꽃과 새를 그린 그림</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">화조화</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/초충도">
+		         		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">풀과 풀벌레를 그린 그림</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">초충도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="ko">일반회화</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/기록화">
+                <skos:prefLabel xml:lang="en">historical painting</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">기록화</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/순절도">
+                    <skos:prefLabel xml:lang="ko">순절도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/계회도">
+                    <skos:prefLabel xml:lang="ko">계회도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/행렬도">
+                    <skos:prefLabel xml:lang="ko">행렬도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/궁궐도">
+                    <skos:prefLabel xml:lang="ko">궁궐도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">painting</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사군자">
+                <skos:prefLabel xml:lang="en">painting of the four gracious plants</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">사군자</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/란도">
+                    <skos:prefLabel xml:lang="ko">란도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대회화">
+                <skos:prefLabel xml:lang="en">modern painting</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대회화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/산수화">
+      		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">동양화에서 산과 물이 어우러진 자연의 아름다움을 그린 그림</rdfs:comment>
+                <skos:prefLabel xml:lang="en">landscape painting</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">산수화</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/일반조각">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대조각">
+                <skos:prefLabel xml:lang="en">modern statue</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대조각</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">statues</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">일반조각</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/암벽조각">
+                <skos:prefLabel xml:lang="en">engraving on a rock wall</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">암벽조각</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/각석">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">글자나 무늬 따위를 돌에 새김</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">각석</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/능묘조각">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">능묘를 옹위하기 위하여 봉분 앞에 배치하는 문무석인과 석수, 석등 따위에 장식된 조각</rdfs:comment>
+                <skos:prefLabel xml:lang="en">statues in royal mausoleum, grave</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">능묘조각</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석수">
+                    <skos:prefLabel xml:lang="ko">석수</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/능묘조각_기타">
+                    <skos:prefLabel xml:lang="ko">능묘조각_기타</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">기타</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석인">
+                    <skos:prefLabel xml:lang="ko">석인</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/기록유산">
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대매체">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/시청각류">
+                <skos:prefLabel xml:lang="en">visual and auditory senses</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">시청각류</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">modern medium</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">근대매체</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:prefLabel xml:lang="ko">기록유산</skos:prefLabel>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/전적류">
+            <skos:prefLabel xml:lang="en">book</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">전적류</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/필사본">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">손으로 써서 만든 책</rdfs:comment>
+                <skos:prefLabel xml:lang="en">written book</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">필사본</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/등록류">
+                    <skos:prefLabel xml:lang="ko">등록류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사본류">
+                    <skos:prefLabel xml:lang="ko">사본류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/고본">
+                    <skos:prefLabel xml:lang="ko">고본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/일기류">
+                    <skos:prefLabel xml:lang="ko">일기류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사경">
+                    <skos:prefLabel xml:lang="ko">사경</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/활자본">
+      		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">활판으로 인쇄한 책</rdfs:comment>
+                <skos:prefLabel xml:lang="en">printed book</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">활자본</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목활자본">
+                    <skos:prefLabel xml:lang="ko">목활자본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/기타활자본류">
+                    <skos:prefLabel xml:lang="ko">기타활자본류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/금속활자본">
+                    <skos:prefLabel xml:lang="ko">금속활자본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목판본">
+                <skos:prefLabel xml:lang="en">block book</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">목판본</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/대장도감본">
+                    <skos:prefLabel xml:lang="ko">대장도감본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/간경도감본">
+                    <skos:prefLabel xml:lang="ko">간경도감본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사간본">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">관본이나 판매를 목적으로 발행한 책이 아닌, 민간에서 개인적으로 새겨서 만든 책</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">사간본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/관판본">
+                    <skos:prefLabel xml:lang="ko">관판본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사찰본">
+                    <skos:prefLabel xml:lang="ko">사찰본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/왕실본">
+                    <skos:prefLabel xml:lang="ko">왕실본</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/문서류">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/향교문서">
+                <skos:prefLabel xml:lang="en">document by Hyanggyo</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">향교문서</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">document</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">문서류</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/국왕문서">
+                <skos:prefLabel xml:lang="en">document by King</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">국왕문서</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/교령류">
+                    <skos:prefLabel xml:lang="ko">교령류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민간문서">
+                <skos:prefLabel xml:lang="en">document by common</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">민간문서</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/분재기류">
+                    <skos:prefLabel xml:lang="ko">분재기류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/관부문서">
+                <skos:prefLabel xml:lang="en">document by government</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">관부문서</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/호적류">
+                    <skos:prefLabel xml:lang="ko">호적류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/사찰문서">
+                <skos:prefLabel xml:lang="en">document by temple</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">사찰문서</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/서간류">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대서간류">
+                <skos:prefLabel xml:lang="en">modern letter</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대서간류</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/탁본류">
+                <skos:prefLabel xml:lang="en">rubbed copy</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">탁본류</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">letter</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">서간류</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/시고류">
+                <skos:prefLabel xml:lang="en">draft poem</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">시고류</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/시고">
+                    <skos:prefLabel xml:lang="ko">시고</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/간독류">
+                <skos:prefLabel xml:lang="en">letter</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">간독류</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/간독">
+                    <skos:prefLabel xml:lang="ko">간독</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/서예">
+      		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">글씨를 붓으로 쓰는 예술</rdfs:comment>
+                <skos:prefLabel xml:lang="en">calligraphy</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">서예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/서각류">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대서각류">
+                <skos:prefLabel xml:lang="en">modern engraving</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대서각류</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">engraved print</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">서각류</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목판각류">
+                <skos:prefLabel xml:lang="en">wooden printing</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">목판각류</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/판목류">
+                    <skos:prefLabel xml:lang="ko">판목류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/현판류">
+                    <skos:prefLabel xml:lang="ko">현판류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/금석각류">
+                <skos:prefLabel xml:lang="en">printing on metal</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">금석각류</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석각류">
+                    <skos:prefLabel xml:lang="ko">석각류</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/비">
+                    <skos:prefLabel xml:lang="ko">비</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/등록문화재">
+        <skos:prefLabel xml:lang="ko">등록문화재</skos:prefLabel>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/등록문화재_기타">
+            <skos:prefLabel xml:lang="ko">등록문화재_기타</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/문화집회시설">
+                <skos:prefLabel xml:lang="ko">문화집회시설</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/동산">
+                <skos:prefLabel xml:lang="ko">동산</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/종교시설">
+                <skos:prefLabel xml:lang="ko">종교시설</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/교육시설">
+                <skos:prefLabel xml:lang="ko">교육시설</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/동산_영화">
+                <skos:prefLabel xml:lang="ko">동산_영화</skos:prefLabel>
+                <skos:altLabel xml:lang="ko">동산(영화)</skos:altLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/주거숙박시설">
+                <skos:prefLabel xml:lang="ko">주거숙박시설</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/업무시설">
+                <skos:prefLabel xml:lang="ko">업무시설</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/인물기념시설">
+                <skos:prefLabel xml:lang="ko">인물기념시설</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:altLabel xml:lang="ko">기타</skos:altLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/동산_미술품">
+                <skos:prefLabel xml:lang="ko">동산_미술품</skos:prefLabel>
+                <skos:altLabel xml:lang="ko">동산(미술품)</skos:altLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/공공용시설">
+                <skos:prefLabel xml:lang="ko">공공용시설</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/등록문화재_의료시설">
+                <skos:prefLabel xml:lang="ko">등록문화재_의료시설</skos:prefLabel>
+                <skos:altLabel xml:lang="ko">의료시설</skos:altLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/산업시설">
+                <skos:prefLabel xml:lang="ko">산업시설</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무형유산">
+
+        <skos:prefLabel xml:lang="en">Intangible Heritage</skos:prefLabel>
+        <skos:prefLabel xml:lang="ko">무형유산</skos:prefLabel>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/공예기술">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무형유산_금속공예">
+                <skos:prefLabel xml:lang="en">metal</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">무형유산_금속공예</skos:prefLabel>
+                <skos:altLabel xml:lang="ko">금속공예</skos:altLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/도자공예">
+                <skos:prefLabel xml:lang="en">ceramic</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">도자공예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무형유산_지공예">
+                <skos:prefLabel xml:lang="en">paper</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">지공예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무형유산_석공예">
+                <skos:prefLabel xml:lang="en">stone</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">무형유산_석공예</skos:prefLabel>
+                <skos:altLabel xml:lang="ko">석공예</skos:altLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/피모공예">
+                <skos:prefLabel xml:lang="en">leather</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">피모공예</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/목칠공예">
+                <skos:prefLabel xml:lang="en">wooden lacquer craft</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">목칠공예</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/죽공예">
+                    <skos:prefLabel xml:lang="ko">죽공예</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무형유산_목공예">
+                    <skos:prefLabel xml:lang="ko">무형유산_목공예</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">목공예</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무형유산_칠공예">
+                    <skos:prefLabel xml:lang="ko">무형유산_칠공예</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">칠공예</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">craft</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/섬유공예">
+                <skos:prefLabel xml:lang="en">fabric</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">섬유공예</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/수매듭공예">
+                    <skos:prefLabel xml:lang="ko">수매듭공예</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/침선공예">
+                    <skos:prefLabel xml:lang="ko">침선공예</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="ko">공예기술</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/음식제조">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/의례음식">
+                <skos:prefLabel xml:lang="en">ceremonial food</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">의례음식</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">food production</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">음식제조</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/궁중음식">
+                <skos:prefLabel xml:lang="en">royal food</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">궁중음식</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민가음식">
+                <skos:prefLabel xml:lang="en">common food</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">민가음식</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/향토술빚기">
+                    <skos:prefLabel xml:lang="ko">향토술빚기</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/전통연행">
+            <skos:prefLabel xml:lang="en">traditional ceremony</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">전통연행</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/연희">
+       		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">말과 동작으로 여러 사람 앞에서 재주를 부림</rdfs:comment>
+                <skos:prefLabel xml:lang="en">event</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">연희</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/탈놀이">
+         		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">탈을 쓰고 하는 놀음놀이</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">탈놀이</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/광대굿놀이">
+         		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">농악 십이채 가운데 상쇠의 개인 놀이 가락을 이용한 놀이</rdfs:comment>
+		    <skos:prefLabel xml:lang="ko">광대굿놀이</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무용">
+                <skos:prefLabel xml:lang="en">dance</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">무용</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민속무용">
+                    <skos:prefLabel xml:lang="ko">민속무용</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/궁중무용">
+                    <skos:prefLabel xml:lang="ko">궁중무용</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/의식">
+                <skos:prefLabel xml:lang="en">ceremony</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">의식</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무속의식">
+                    <skos:prefLabel xml:lang="ko">무속의식</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/국가의식">
+                    <skos:prefLabel xml:lang="ko">국가의식</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/놀이">
+                <skos:prefLabel xml:lang="en">play</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">놀이</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/세시놀이">
+                    <skos:prefLabel xml:lang="ko">세시놀이</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/음악">
+                <skos:prefLabel xml:lang="en">music</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">음악</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민속음악">
+                    <skos:prefLabel xml:lang="ko">민속음악</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/궁중음악">
+                    <skos:prefLabel xml:lang="ko">궁중음악</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무예">
+                <skos:prefLabel xml:lang="en">martial art</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">무예</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무기술">
+                    <skos:prefLabel xml:lang="ko">무기술</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/유적건조물">
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/유물산포지유적산포지">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/수중유물산포지">
+                <skos:prefLabel xml:lang="en">relics under water</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">수중유물산포지</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/육상유물산포지">
+                <skos:prefLabel xml:lang="en">relics in land</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">육상유물산포지</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">site of relics, distribution of cultural site</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">유물산포지유적산포지</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/유적분포지">
+                <skos:prefLabel xml:lang="en">distribution of cultural site</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">유적분포지</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/인물사건">
+            <skos:prefLabel xml:lang="en">people &amp; event</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">인물사건</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/역사사건">
+                <skos:prefLabel xml:lang="ko">역사사건</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대사건">
+                <skos:prefLabel xml:lang="ko">근대사건</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/인물기념">
+                <skos:prefLabel xml:lang="en">people in history</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">인물기념</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/순절지">
+                    <skos:prefLabel xml:lang="ko">순절지</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/인물사건_사우">
+                    <skos:prefLabel xml:lang="ko">인물사건_사우</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">사우</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/생활유적">
+                    <skos:prefLabel xml:lang="ko">생활유적</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대인물">
+                <skos:prefLabel xml:lang="en">people in history</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대인물</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/광복운동">
+                    <skos:prefLabel xml:lang="ko">광복운동</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/종교신앙">
+            <skos:prefLabel xml:lang="en">religion &amp; belief</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">종교신앙</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/개신교">
+                <skos:prefLabel xml:lang="en">christian</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">개신교</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/교회">
+                    <skos:prefLabel xml:lang="ko">교회</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/불교">
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/불전">
+                    <skos:prefLabel xml:lang="ko">불전</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:prefLabel xml:lang="en">buddhism</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/석등">
+          		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">돌로 네모지게 만든 등</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">석등</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/탑">
+           		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">여러 층으로 또는 높고 뾰족하게 세운 건축물을 통틀어 이르는 말</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">탑</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/불교_기타">
+                    <skos:prefLabel xml:lang="ko">불교_기타</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">기타</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/각루">
+                    <skos:prefLabel xml:lang="ko">각루</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/당우">
+                    <skos:prefLabel xml:lang="ko">당우</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/당간">
+                    <skos:prefLabel xml:lang="ko">당간</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:prefLabel xml:lang="ko">불교</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민족종교">
+                <skos:prefLabel xml:lang="en">people's belief</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">민족종교</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/천도교">
+           		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">최제우가 창건한 동학을 제 3대 교주인 손병희가 개칭한 이름</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">천도교</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/민간신앙">
+                <skos:prefLabel xml:lang="en">folk belief</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">민간신앙</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무속">
+                    <skos:prefLabel xml:lang="ko">무속</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/천주교">
+                <skos:prefLabel xml:lang="en">catholic</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">천주교</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/성당">
+                    <skos:prefLabel xml:lang="ko">성당</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/제사유적">
+                <skos:prefLabel xml:lang="ko">제사유적</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/성황당">
+            		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">서낭신을 모신 집의 원말</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">성황당</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/산신당">
+                    <skos:prefLabel xml:lang="ko">산신당</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/제사터">
+                    <skos:prefLabel xml:lang="ko">제사터</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/무덤">
+           		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">송장이나 유골을 땅에 묻어 놓은 곳. 흙으로 둥글게 쌓아 올리기도 하고 돌로 평평하게 만들기도 하는데, 대개 묘석을 세워 누구의 것인지 표시</rdfs:comment>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대무덤">
+                <skos:prefLabel xml:lang="en">modern tomb</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대무덤</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="ko">무덤</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/왕실무덤">
+                <skos:prefLabel xml:lang="en">royal tomb</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">왕실무덤</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/고대">
+                    <skos:prefLabel xml:lang="ko">고대</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/조선시대">
+                    <skos:prefLabel xml:lang="ko">조선시대</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">tomb</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/봉토묘">
+              		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">흙을 쌓아 올린 무덤</rdfs:comment>
+                <skos:prefLabel xml:lang="ko">봉토묘</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/고분군">
+                <skos:prefLabel xml:lang="ko">고분군</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/교통통신">
+            <skos:prefLabel xml:lang="en">transport &amp; communication</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">교통통신</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/통신">
+                <skos:prefLabel xml:lang="en">communication</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">통신</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/봉수">
+                    <skos:prefLabel xml:lang="ko">봉수</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대교통·통신시설">
+                <skos:prefLabel xml:lang="en">modern transport &amp; communication</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대교통·통신시설</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/철도">
+                    <skos:prefLabel xml:lang="ko">철도</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/우정">
+                    <skos:prefLabel xml:lang="ko">우정</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/교통">
+                <skos:prefLabel xml:lang="en">transport</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">교통</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/교량">
+                    <skos:prefLabel xml:lang="ko">교량</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/수상교통">
+                    <skos:prefLabel xml:lang="ko">수상교통</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:prefLabel xml:lang="ko">유적건조물</skos:prefLabel>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/주거생활">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대주거">
+                <skos:prefLabel xml:lang="en">modern residene</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대주거</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대가옥">
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    ></rdfs:label>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">living residence</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">주거생활</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/조경건축">
+                <skos:prefLabel xml:lang="en">architect of garden</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">조경건축</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/누정">
+                    <skos:prefLabel xml:lang="ko">누정</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/원">
+                    <skos:prefLabel xml:lang="ko">원</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/주거건축">
+                <skos:prefLabel xml:lang="en">architect of residence</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">주거건축</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/건물지">
+                    <skos:prefLabel xml:lang="ko">건물지</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/가옥">
+        		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">사람이 사는 집</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">가옥</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/주거시설">
+                    <skos:prefLabel xml:lang="ko">주거시설</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/주거지">
+                <skos:prefLabel xml:lang="en">residence</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">주거지</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/정치국방">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/전적지">
+                <skos:prefLabel xml:lang="en">site of military record</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">전적지</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">politics &amp; military</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">정치국방</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대정치국방">
+                <skos:prefLabel xml:lang="en">modern politic &amp; military</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대정치국방</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대정치국방_기타">
+                    <skos:prefLabel xml:lang="ko">근대정치국방_기타</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">기타</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/외교">
+                    <skos:prefLabel xml:lang="ko">외교</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/성">
+                <skos:prefLabel xml:lang="en">wall</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">성</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/성지">
+                    <skos:prefLabel xml:lang="ko">성지</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/성곽시설">
+                    <skos:prefLabel xml:lang="ko">성곽시설</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/성곽">
+                    <skos:prefLabel xml:lang="ko">성곽</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/궁궐·관아">
+                <skos:prefLabel xml:lang="en">Royal palace &amp; government office</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">궁궐·관아</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/제단">
+                    <skos:prefLabel xml:lang="ko">제단</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/궁궐터">
+                    <skos:prefLabel xml:lang="ko">궁궐터</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/궁궐">
+                    <skos:prefLabel xml:lang="ko">궁궐</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/천문관측">
+                    <skos:prefLabel xml:lang="ko">천문관측</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/정치국방_사우">
+                    <skos:prefLabel xml:lang="ko">정치국방_사우</skos:prefLabel>
+                    <skos:altLabel xml:lang="ko">사우</skos:altLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/관아">
+                    <skos:prefLabel xml:lang="ko">관아</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/교육문화">
+            <skos:prefLabel xml:lang="en">education</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">교육문화</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/교육기관">
+                <skos:prefLabel xml:lang="en">education system</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">교육기관</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/향교">
+         		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">고려ㆍ조선 시대에, 지방에 있던 문묘와 그에 속한 관립 학교</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">향교</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/성균관">
+         		  	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">고려 시대에, 유학을 전수하던, 나라의 최고 학부</rdfs:comment>
+                    <skos:prefLabel xml:lang="ko">성균관</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대교육문화">
+                <skos:prefLabel xml:lang="en">modern education</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대교육문화</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/의료시설">
+                    <skos:prefLabel xml:lang="ko">의료시설</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/학교시설">
+                    <skos:prefLabel xml:lang="ko">학교시설</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/산업생산">
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/광업">
+                <skos:prefLabel xml:lang="ko">광업</skos:prefLabel>
+                <skos:prefLabel xml:lang="en">mining</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/제조업">
+                <skos:prefLabel xml:lang="ko">제조업</skos:prefLabel>
+                <skos:prefLabel xml:lang="en">manufacture</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/어업_염업">
+                <skos:prefLabel xml:lang="ko">어업 염업</skos:prefLabel>
+                <skos:prefLabel xml:lang="en">fishing,salt manufacture</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/농업">
+                <skos:prefLabel xml:lang="en">agriculture</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">농업</skos:prefLabel>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:prefLabel xml:lang="en">industry</skos:prefLabel>
+            <skos:prefLabel xml:lang="ko">산업생산</skos:prefLabel>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/근대산업생산">
+                <skos:prefLabel xml:lang="en">modern industry</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">근대산업생산</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/금융업">
+                    <skos:prefLabel xml:lang="ko">금융업</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/전기·수도업">
+                    <skos:prefLabel xml:lang="ko">전기·수도업</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+            <skos:narrower>
+              <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/요업">
+                <skos:prefLabel xml:lang="en">ceramic industry</skos:prefLabel>
+                <skos:prefLabel xml:lang="ko">요업</skos:prefLabel>
+                <skos:narrower>
+                  <skos:Concept rdf:about="http://lod.datahub.kr/def/kch/토기가마">
+                    <skos:prefLabel xml:lang="ko">토기가마</skos:prefLabel>
+                  </skos:Concept>
+                </skos:narrower>
+              </skos:Concept>
+            </skos:narrower>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:prefLabel xml:lang="en">Cultural Sites / Architectural Structures</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+
+<!-- MediaType (MIME Type) -->
+<rdf:Description rdf:about="http://things.datahub.kr/id/mediaType/image/jpg">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
+	<rdf:value>image/jpg</rdf:value>
+	<rdfs:label xml:lang="ko">이미지</rdfs:label>
+	<rdfs:label xml:lang="en">IMAGE</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://things.datahub.kr/id/mediaType/video/x-ms-wmv">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
+	<rdf:value>video/x-ms-wmv</rdf:value>
+	<rdfs:label xml:lang="ko">동영상</rdfs:label>
+	<rdfs:label xml:lang="en">VIDEO</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

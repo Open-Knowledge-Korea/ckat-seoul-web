@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+ <script type="text/javascript">
+ 		var i, j, object, key;
+		var result = c;
+		var input = {
+			items : [],
+			types : {},
+			properties : {}
+		};
+		alert(result.results.bindings.length);
+		for(i = 0; i < result.results.bindings.length; i++) {
+			object = result.results.bindings[i];
+			var temp = {};
+			for(j = 0; j < result.head.vars.length; j++) {
+				key = result.head.vars[j];
+				if(object[key] != null) {
+					temp[key] = object[key].value;
+				}
+				else {
+					temp[key] = null;
+				}
+			}
+			input.items.push(temp);
+		}
+
+		var c = input;
+ </script>
+
+ <body>
+  
+ </body>
+</html>

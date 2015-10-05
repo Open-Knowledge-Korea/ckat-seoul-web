@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ad="http://lod.datahub.kr/def/ad/" 
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+>
+  <!-- 온톨로지 설명 (Ontology Description) -->
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad.rdf">
+    <dcterms:rightsHolder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</dcterms:rightsHolder>
+    <cc:attributionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</cc:attributionName>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/us/"/>
+    <foaf:primaryTopic rdf:resource="http://lod.datahub.kr/def/ad/"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-22</dcterms:modified>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-22</dcterms:created>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Knowledge Foundation Korea</dc:creator>
+     <dc:description>본 명세서는 대한민국의 행정구역을 의미적으로 표현하기 위한 어휘를 정의한다. 본 명세서에서 정의한 어휘는 대한민국에서 행정구역을 구분하기 위한 기준과 관계를 포함한다. &lt;p/&gt;
+     행정구역은 정치적으로 하나의 단위를 이루는 국가에서 행정상의 목적에 따라 일정한 범위로 구분한 행정단위이다. 행정구역은 국가별로 다르다. 대한민국의 행정구역은 특별시, 광역시, 도, 시, 군, 구, 읍, 면, 동, 리로 구분하며, 현재  1개의 특별시, 6개의 광역시, 8개의 도, 1개의 특별자치시, 1개의 특별자치도로 구성된다. &lt;p/&gt;
+     특별시는 자치구로, 광역시는 자치구와 군으로, 도는 자치시와 군으로 하위 행정구역을 둔다. 이상의 행정구역은 기초자치단체로 분류된다. 특별자치시는 그 자체로 하나의 기초자치단체를 구성한다. 특별자치도는 자치시가 아닌 행정시를 둘 수 있으며, 행정시는 특별자치도지사 직속으로 그 역할을 하며 기초지방자치단체로서의 권한이 없다. 일반구는 특별시, 광역시를 제외한 인구 50만명 이상의 시에 둔다. 일반구는 기초지방자치단체로서의 권한이 없다는 측면에서 특별시, 광역시에 설치된 자치구와 구별된다. 시(자치시, 행정시)와 구(자치구, 일반구)는 읍·면·동, 군은 읍, 면의 하위 행정구역을 갖고 있으며, 읍·면은 행정리로, 동은 통으로 나뉜다. 통 및 행정리는 말단 행정 구역인 반으로 나뉜다.
+    </dc:description>
+  </rdf:Description>
+  
+  <!-- 클래스 (Classses) -->
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">대한민국의 행정 구역은 1개의 특별시, 6개의 광역시, 8개의 도, 1개의 특별자치시, 1개의 특별자치도로 구성된다. 이상 총 17개의 행정구역은 광역자치단체로 분류된다. 특별시는 자치구로, 광역시는 자치구와 군으로, 도는 자치시와 군으로 하위 행정구역을 둔다. 이상의 행정구역은 기초자치단체로 분류된다. 특별자치시는 그 자체로 하나의 기초자치단체를 구성한다. 특별자치도는 자치시가 아닌 행정시를 둘 수 있으며, 행정시는 특별자치도지사 직속으로 그 역할을 하며 기초지방자치단체로서의 권한이 없다. 2011년 1월 기준으로 특별시와 6개 광역시에는 총 69개의 자치구가 설치되어 있다. 또한 6개 광역시와 8개 도에는 총 74개의 자치시와 85개의 군이 설치되어 있다.
+특별·광역시를 제외한 인구 50만명 이상의 시에는 일반구를 둘 수 있다. 일반구는 기초지방자치단체로서의 권한이 없어, 특별·광역시에 설치된 자치구와 구별된다. 일반구의 구청장은 일반직 지방공무원으로 보(補)하고 시장이 임명한다. 구청장은 시장의 지휘·감독을 받아 소관 국가사무 및 지방자치사무를 맡아 처리하고 소속 직원을 지휘·감독한다.
+시(자치시, 행정시)와 구(자치구, 일반구)는 읍·면·동으로, 군은 읍·면으로 하위 행정구역을 둔다. 다시 읍·면은 행정리로, 동은 통으로 나뉜다. 통 및 행정리는 말단 행정 구역인 반으로 나뉜다.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">South Korea is divided into 8 provinces (do), 1 special autonomous province (teukbyeol jachido), 6 metropolitan cities (gwangyeoksi), and 1 special city (teukbyeolsi). These are further subdivided into a variety of smaller entities, including cities (si), counties (gun), districts (gu), towns (eup), townships (myeon), neighborhoods (dong) and villages (ri).</rdfs:comment>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Administrative Divisions of South Korea</rdfs:label>
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Do">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Province</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">도(道)는 행정 구역의 하나이다. 한국·중국·일본 등 동양 한자 문화권 국가의 행정구역으로 예로부터 써왔다. 현재는 한국(대한민국·조선민주주의인민공화국)에서만 널리 쓰고 있으며, 일본에서는 홋카이도(北海道)에만 그 이름이 남아 있으며, 중국에서는 폐지되었다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">도</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">道</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">도</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">道</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Provinces" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Provinces" />
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Teukbyeol-jachi-do">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special self-governing province</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별자치도(特別自治道)는 대한민국의 광역 행정 구역이다. 특별자치도는 지방자치법에 의거한 상급 지방자치단체로 정부의 직할하에 두며 법률에 의거해 고도의 자치권이 보장된다. 특별자치도의 관할 내에는 특별자치도지사 직속의 자치경찰, 도로기획단, 특별자치도지사 직속 보훈청 등 국방, 경제 이외의 대부분의 권한을 담당하는 행정 기관이 배치되어 있다. 다만 치안 유지를 위해 행정안전부 소속 지방경찰청급 특별자치도경찰청과 기타 치안 관련 업무 기관은 양분되거나 타 시도의 권한과 동일하게 존재한다.
+또한 특별자치도는 행정시를 두고 있다. 행정시란 타 시도의 자치시에 비해 권한이 대폭 제한되어 있는 시로서 과거 지방자치법 시행 이전의 행정시와 같은 권한을 가지고 있다. 그러므로 지방 자치 단체가 아닌 행정 업무를 처리하는 행정시(市)이다. 이에 행정시의 시장은 특별자치도의 강력한 자치 행정 집행을 위해 특별자치도지사가 임명한다. 대한민국의 특별자치도는 현재 제주특별자치도뿐이다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별자치도</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">特別自治道</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teukbyeol-jachi-do</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별자치도</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">特別自治道</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teukbyeol-jachi-do</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Teukbyeol-si">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special city</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별시(特別市)는 대한민국의 행정 구역과 조선민주주의인민공화국의 행정 구역으로, 현재 대한민국에서는 서울특별시가 유일하며, 조선민주주의인민공화국에서는 라선특별시와 남포특별시가 설치되어 있다. 서울은 1949년 '특별자유시'에서 특별시로 승격시킴으로써 생겨났다. 역할은 광역시와 유사하나, 더 강한 권한을 가진다. 라선은 2010년 1월 4일 최고인민회의 상임위원회 정령에 따라 '특급시'에서 특별시로 승격시킴으로써 생겨났다.</rdfs:comment>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별시</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teukbyeol-si</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">特別市</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별시</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teukbyeol-si</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">特別市</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Gwangyeok-si">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metropolitan cities</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">광역시(廣域市)는 대한민국의 행정 구역이다. 특별시에 버금가는 행정 구역으로, 원래는 직할시였으나 지방자치법에 의해 1995년에 현재와 같이 명칭을 변경하였다. 변경 당시에는 부산, 대구, 인천, 광주, 대전만이 있었으나 1997년에 경상남도 울산시가 광역시로 승격되면서 현재는 총 6곳이 되었다. 하위 행정 구역으로 자치구나 군을 가진다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">광역시</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">廣域市</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gwangyeok-si</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">광역시</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">廣域市</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gwangyeok-si</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Metropolitan_City" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Metropolitan_City" />
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Si">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">City</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">대한민국에서 시라고 하는 것은 크게 세 종류로 나눌 수 있는데, 광역자치단체인 특별시·광역시·특별자치시(특별자치시는 2012년 7월부터 출범),[1] 도의 하부 행정 구역으로 기초자치단체인 시,[1] 그리고 특별자치도의 하부 행정구역으로 지방자치단체가 아닌 행정시가 있다.[2] 기초자치단체인 시는 인구가 50만 명 이상이 되면 일반구(행정구)를 하부 행정 구역으로 둘 수 있다.[3](성남시, 청주시, 전주시 등) 일반적으로 말하는 시는 기초자치단체인 시이다. 이를 기준으로 할 때, 가장 최근에 생긴 시는 2012년 1월 1일자로 시가 된 충청남도 당진시이다. 현재 인구가 가장 많은 시는 경기도 수원시, 인구가 가장 적은 시는 충청남도 계룡시이다. 옛날에는 읍 또는 면의 인구가 5만 이상이 되면 시로 승격하여 군에서 분리되고 군의 이름도 바꿨으며, 읍이 시로 승격되면서 군은 시를 둘러싼 위요지가 되거나 월경지를 형성하기도 한다.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A si (시, 市) is one of the divisions of a province, along with gun. Cities have a population of at least 150,000; once a county (gun) attains that population, it becomes a city (Gijang county in Busan is an exception). Cities with a population of over 500,000 (such as Suwon, Cheongju, and Jeonju) are divided into districts (gu); Gimhae, Hwaseong and Namyangju are noticeable exceptions to this rule. Gus are then further divided into neighborhoods (dong); cities with a population of less than 500,000 do not have wards – these cities are directly divided into neighborhoods (dong).</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">시</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">市</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">시</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">市</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Cities" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Cities" />
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Jachi-si">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-governing city</dcterms:subject>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역의 하나로 기초자치단체</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치시</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jachi-si</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치시</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jachi-si</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Haengjeong-si">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정시(行政市)는 대한민국의 행정 구역 중 하나로 지방자치법 시행 이후 기초자치단체인 자치시로 전환되었다. 그 후 제주특별자치도 설치 및 국제 자유 도시 조성을 위한 특별법이 2006년 2월 21일에 제정돼 2006년 7월 1일 시행됨에 따라 다시 부활되었다. 지방자치법 시행 이전 행정시를 그대로 답습한 것이므로 자치시가 지닌 기초 지방 자치 단체로서의 지위가 없음은 물론 극히 제한된 권한을 가지고 있다. 다만, 지방자치법 시행이전 행정시에 대한 시장 임명 및 관리·감독을 중앙정부에서 했다면 지금은 특별자치도지사가 임명 및 관리·감독하고 있다는 점은 다른 부분이다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정시</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haengjeong-si</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">行政市</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정시</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haengjeong-si</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">行政市</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Teukjeong-si">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">대한민국의 광역자치단체인 도에 소속된 기초자치단체 중 도지사의 권한이 상당 부분 시장에게 위임된 시를 비공식적으로 일컫는 명칭이다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정시</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teukjeong-si</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">特政市</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정시</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teukjeong-si</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">特政市</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Teukbyeol-jachi-si">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special self-governing city</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별자치시(特別自治市)는 대한민국의 행정 구역이다. 2009년 4월 21일 국회 행정안전위원회 소속 국회의원들은 세종시의 법적지위와 관련 '정부직할의 세종특별자치시'로 확정하고, 국가위임사무도 원칙적으로 세종시에 위임하기로 합의하였다. 2012년 7월 1일 세종특별자치시가 출범하여 대한민국 최초의 특별자치시가 되었다.</rdfs:comment>
+    <dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special self-governing city</dc:subject>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별자치시</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teukbyeol-jachi-si</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">特別自治市</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특별자치시</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teukbyeol-jachi-si</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">特別自治市</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Gu">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">District</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">구(區)는 행정 구역 중의 하나다. 대한민국의 구에는 자치구와 일반구가 있다.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gu (구; 區) is equivalent to district in the West. Most cities are divided into gus, though the metropolitan cities of Busan, Daegu, Incheon and Ulsan contain guns as well. Gus are similar to boroughs in some Western countries, and a gu office handles many of the functions that would be handled by the city in other jurisdictions. Gus are divided into neighborhoods (dong).</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">구</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gu</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">區</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">구</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gu</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">區</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Districts" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Districts" />
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Jachi-gu">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-governing district</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정 구역 단위로, 광역자치단체인 특별시나 광역시에 소속된 기초자치단체로서의 구를 말한다. 즉 자치구는 시·군과 동격의 자치 권한을 가지며, 특정시에 하위 행정 구역으로 설치된 일반구와는 구분된다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치구</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jachi-gu</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치구</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jachi-gu</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Gu"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Ilban-gu">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">District (disjoint with self-governing district)</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치시의 하위 행정 구역으로, 자치시와 동격인 자치구와는 지위가 다르므로 일반구 소속으로의 기초단체장이나 의회는 없다. 일반구의 구청장은 선거로 뽑히지 않으며, 일반적으로 3~4급(주로 4급)에 해당하는 공무원이 맡게 된다. 일반적으로 특정시라고도 불릴 수 있는 인구 50만 이상인 대도시에 설치된다. 단, 지방행정체제개편에관한특별법에 의거 인구 30만이상이고 면적이 1000㎢이상인 통합 시는 인구 50만 이상 대도시로 간주하여 일반구가 설치될 수도 있다. 행정동을 하위 행정 구역으로 가지며, 읍·면을 가지기도 한다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">일반구</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ilban-gu</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">일반구</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ilban-gu</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Gu"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Gun">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">County</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">대한민국에서는 군은 도 및 광역시의 하부 행정 구역이다. 도시의 형태를 갖추고 (시가지를 구성하는 지역안에 거주하는 인구의 비율이 전체 인구의 60% 이상이며 상업·공업 기타 도시적 산업에 종사하는 가구의 비율이 전체가구의 60% 이상.) 인구가 5만 명 이상이 되거나 국가의 정책으로 인하여 도시가 형성되고, 도의 출장소가 설치된 지역으로서 인구 3만 명 이상일 경우 자치시로 승격될 수 있다.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gun (군; 郡) is one of the divisions of a province (along with si), and of the metropolitan cities of Busan, Daegu, Incheon and Ulsan (along with gu). A gun has a population of less than 150,000 (more than that would make it a city or si), is less densely populated than a gu, and is more rural in character than either of the other 2 divisions. Gun are comparable to British non-metropolitan districts. Counties are divided into towns (eup) and districts (myeon).</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">군</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gun</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">郡</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">군 </skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gun</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">郡</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Counties" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Counties" />
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Eup">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Town</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">읍(邑)은 대한민국 및 조선민주주의인민공화국의 행정 구역이다. 일제 강점기 1917년 10월 1일 일본인 거주자가 비교적 집중되는 면을 지정면(指定面)으로 개편하였다. [1] 1931년 4월 1일 지정면을 읍으로 개칭하였다. [2] 인구가 가장 많은 읍은 94,746명인 남양주시 화도읍이고, 인구가 가장 적은 읍은 영월군 상동읍으로 인구가 1,300명 정도이다. 인구가 10000명도 안 되는 읍도 있다.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An eup (읍; 邑) is similar to the unit of town. Along with myeon, an eup is one of the divisions of a county (gun), and of some cities (si) with a population of less than 500,000. The main town or towns in a county—or the secondary town or towns within a city's territory—are designated as eups. Towns are subdivided into villages (ri). In order to form an eup, the minimum population required is 20,000.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">읍</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">邑</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eup</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">읍</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">邑</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eup</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Town" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Town" />
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Myeon">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Township</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">대한민국의 면(面)은 자치시·군·구의 하부 행정 구역으로 도시의 형태를 갖추고 (시가지를 구성하는 지역안에 거주하는 인구의 비율이 전체 인구의 40% 이상이며 상업·공업 기타 도시적 산업에 종사하는 가구의 비율이 전체가구의 40% 이상.) 인구가 2만 명 이상이면 읍으로 승격될 수 있다. 이러한 조건을 만족하지 않아도 군청 소재지인 면 또는 읍이 없는 도농복합도시의 면 중 하나가 되어도 읍으로 승격될 수 있다. 하부 행정 구역은 리 (옛날 경상북도, 평안북도, 함경북도는 동을 하부 행정 구역으로 쓴 적이 있었다.)이다. 면이 되려면 최소한 6,000명의 상주 인구를 가지고 있어야 하지만, 울릉군 북면처럼 1000명 이하의 인구가 사는 면도 있다.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A myeon (면; 面) is one of the divisions – along with eup – of a county (gun) and some cities (si) of fewer than 500,000 population. Myeons have smaller populations than eups and represent the rural areas of a county or city. Myeons are subdivided into villages (ri). The minimum population limit is 6,000.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">면</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">面</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myeon</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">면</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">面</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myeon</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Township" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Township" />
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Dong">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neighborhood</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">대한민국의 행정 구역의 하나로 구 또는 시의 하부 행정 구역이다. 행정동(行政洞)이라고 불리어 법정동과 구별하고 있으며, 모든 행정동에 동주민센터가 있다.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the lowest administrative unit of districts (gu; 구) and of those cities (si) which are not divided into wards throughout Korea</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">동</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dong</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">洞</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dong</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">동</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">洞</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Neighborhoods" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Neighborhoods" />
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Haengjeong-dong">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neighborhood</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">대한민국의 행정 구역의 하나로 구 또는 시의 하부 행정 구역이다. 행정동(行政洞)이라고 불리어 법정동과 구별하고 있으며, 모든 행정동에 동주민센터가 있다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정동</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haengjeong-dong</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정동</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haengjeong-dong</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Dong"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Beopjeong-dong">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neighborhood</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">법정동(法定洞)은 대한민국 법정 구역으로, 법률로 지정된 행정 구역이다. 그 명칭은 전통적인 지역 이름으로, 대부분 1914년 행정 구역 통·폐합 시 정해진 대로 현재에 이르고 있다. 행정동은 주민 수에 의해 설치 또는 폐지되기 때문에 주민 수의 증가와 감소에 따라 유동적으로 설치 및 폐지되는 반면, 법정동은 지역 이미지 재고를 위해 주민들이 법정동을 폐지하거나 개명하는 경우(대전광역시 서구 삼천동, 서울특별시 강남구 포이동, 강동구 하일동), 기존 행정구역 단위나 단위의 일부가 다른 상위 행정구역 경계로 편입되면서 설치되는 경우(서울특별시 강서구 공항동, 대구광역시 북구 대현동)등 소수의 경우를 제외하고는 변동이 거의 없다. 다만 도시 개발 등으로 지역의 구획이 바뀌면 행정상의 번거로움을 피하기 위해 기존의 구획에서 가로를 기준으로 새로 법정동 경계를 조정하거나(대구광역시 북구 동천동), 드물게는 법정동을 통합하기도 한다(서울특별시 은평구 진관동). 하지만 모든 경우에 항상 이런 조정이 이루지는 것은 아니다.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">법정동</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">法定洞</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beopjeong-dong</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">법정동</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">法定洞</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beopjeong-dong</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/Dong"/>
+    
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Ri">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Village</dcterms:subject>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">대한민국의 리는 읍(邑)·면(面)의 하부 행정 구역이다. 행정리(行政里) 도시 지역의 통(統)과 대등한 행정 구역이고, 법정리(法定里)는 법률로 지정된 전통적인 명칭을 말한다.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ri (리; 里) is the only division of towns (eup) and districts (myeon). The ri is the smallest level of rural government to contain any significant number of people.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">리</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ri</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">里</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">리</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ri</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">里</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Villages" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Villages" />
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Ban">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">District</dcterms:subject>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">반</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ban</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">班</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">반</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ban</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">班</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/Tong">
+    <dcterms:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Village</dcterms:subject>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">통</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tong</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">統</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">통</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tong</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">統</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Villages" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Villages" />
+  </rdf:Description>
+  
+  <!-- 행정구역 포함관계를 정의하기 위한 최상위 속성 -->
+   
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/include">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역 사이의 포함 관계</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/partOf">
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  
+  <!-- 행정구역 포함관계를 정의하기 위한 속성 (Properties) -->
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasJachi-si">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has jachi-si</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has jachi-si</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치시</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치시</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 자치시</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Jachi-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gwangyeok-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasHaengjeong-si">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>   
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has haengjeong-si</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has haengjeong-si</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정시</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정시</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 행정시</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-jachi-do"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasJachi-gu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has jachi-gu</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has jachi-gu</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치구</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치구</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 자치구</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Jachi-gu"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gwangyeok-si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasIlban-gu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ilban-gu</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ilban-gu</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">일반구</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">일반구</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 일반구</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Ilban-gu"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukjeong-si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasGun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has gun</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">군</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">군</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has gun</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 군</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Gun"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gwangyeok-si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasBeopjeong-dong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has beopjeong-dong</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has beopjeong-dong</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">법정동</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">법정동</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 법정동</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Beopjeong-dong"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gu"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-dong"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasMyeon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has myeon</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has myeon</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">면</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">면</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 면</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Myeon"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gun"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Ilban-gu"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasEup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">읍</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has eup</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has eup</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">읍</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 읍</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Eup"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gun"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Ilban-gu"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasDong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has dong</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">동</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has dong</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">동</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 동</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Dong"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-jachi-do"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gwangyeok-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-jachi-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Jachi-si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasRi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ri</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">리</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">리</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ri</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 리</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Ri"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Myeon"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Dong"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Eup"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/hasTong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/include/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has tong</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has tong</rdfs:label>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">통</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">통</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역이 포함하는 통</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Tong"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-dong"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/tongOf"/>
+  </rdf:Description>
+  
+  <!-- 하위 행정구역 to 상위 행정 구역 -->
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/haengjeong-siOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haengjeong-si-of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haengjeong-si-of</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정시를 포함하는 상위 행정구역</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-jachi-do"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/hasHaengjeong-si"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/jachi-guOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jachi-gu of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jachi-gu of</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">자치구의 상위 행정구역</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-si"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Gwangyeok-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Jachi-gu"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/hasJachi-gu"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/ilban-guOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ilban-gu of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ilban-gu of</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">일반구의 상위 행정구역</rdfs:comment>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Ilban-gu"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Teukjeong-si"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/hasIlban-gu"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/gunOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gun of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gun of</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">군의 상위 행정구역</rdfs:comment>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gun"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Gwangyeok-si"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/hasGun"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/dongOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">동의 상위 행정구역</rdfs:comment>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dong of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dong of</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Gu"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Jachi-gu"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Ilban-gu"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Teukbyeol-jachi-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Dong"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/hasDong"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/eupOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eup of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eup of</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">면의 상위 행정구역</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Gun"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Ilban-gu"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Jachi-si"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Eup"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/eupOf"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/myeonOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myeon of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myeon of</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">면의 상위 행정구역</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-si"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Jachi-si"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Gun"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Ilban-gu"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Myeon"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/hasMyeon"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/riOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ri of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">riOf</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">리의 상위 행정구역</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Myeon"/>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Eup"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Ri"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/hasRi"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/tongOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdfs:Resource="http://lod.datahub.kr/def/ad/partOf/" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tong of</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tong of</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">통의 상위 행정구역</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Haengjeong-dong"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Tong"/>
+    <owl:inverseOf rdf:resource="http://lod.datahub.kr/def/ad/hasTong"/>
+  </rdf:Description>
+  
+  <!-- 특정 객체가 위치한 행정구역 -->
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/do">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do</skos:prefLabel>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 도</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/si">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">si</skos:prefLabel>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 시</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">si</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/gu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gu</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gu</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 구</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Gu"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/gun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gun</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gun</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 군</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Gun"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/eup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eup</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eup</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 읍</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Eup"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/myeon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myeon</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myeon</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 면</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Myeon"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/dong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dong</skos:prefLabel>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 동</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dong</rdfs:label>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Dong"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/ri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ri</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ri</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 리</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Ri"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/tong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tong</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tong</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 통</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Tong"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/ban">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ban</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ban</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">특정 객체가 위치한 반</rdfs:comment>
+    <rdfs:range rdf:resource="http://lod.datahub.kr/def/ad/Ban"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  
+  <!-- 행정구역의 별도 속성 -->
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/population">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">population</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">인구</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역의 인구 현황</rdfs:comment>
+    <rdfs:range rdf:datatype="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/office">
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Government Office</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:datatype="http://schema.org/GovernmentOffice" />
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">정부기관의 사무소</rdfs:label>
+	<rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>  
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/governor">
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">governor</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:datatype="http://xmlns.com/foaf/0.1/Person" />
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">도지사</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/area">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역의 면적</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:datatype="http://www.w3.org/2001/XMLSchema#double" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">area</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">면적</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/numberOfHousehold">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">Number of Households</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">세대수</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역의 세대수 (숫자)</rdfs:label>
+    <rdfs:range rdf:datatype="http://www.w3.org/2001/XMLSchema#double" />
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/numberOfRi">
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">numberOfRi</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:datatype="http://www.w3.org/2001/XMLSchema#double" />
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">행정구역의 리 (숫자)</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/numberOfTongs">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">행정구역의 통 (숫자)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:datatype="http://www.w3.org/2001/XMLSchema#double" />
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">numberOfTongs</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">통의 수</rdfs:label>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/numberOfBan">
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">numberOfBan</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:datatype="http://www.w3.org/2001/XMLSchema#double" /> 
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/subDivision">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sub-division</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">하위 행정구역</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">해당 행정구역이 포함하고 있는 하위 행정구역 현황</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/divisionCode">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">sido Code</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sido Code</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">도, 특별시, 광역시 단위의 행정구역 코드</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/sidoCode">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">sido Code</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sido Code</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">도, 특별시, 광역시 단위의 행정구역 코드</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Do"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/sigugunCode">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">sigugun Code</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sigugun Code</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">시구군 코드</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Si"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gun"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Gu"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/eupmyeondongCode">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">eupmyeondong Code</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eupmyeondong Code</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">읍, 면, 동 단위의 행정구역 코</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Myeon"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Dong"/>
+    <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/Eup"/>
+  </rdf:Description>
+  
+</rdf:RDF>  

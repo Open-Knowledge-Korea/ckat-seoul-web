@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html data-client="webkit">
+	<head>
+	<meta charset="UTF-8">
+	<title>Exhibit</title>
+	<link type="text/css" rel="stylesheet" href="/bootstrap/css/docs.css"> 
+	<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<script src="http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js" type="text/javascript"></script>
+	<script src="sparql.js" type="text/javascript"></script>
+	
+	<script>
+		//$.holdReady(true); 
+		//$.getScript("sparql.js", function() { 
+		//});
+		/*
+		$(document).ready(function() {
+			$('*').on('load', function() {
+				console.log("click");
+				$("a.exhibit-facet-value-link").each(function(){
+					var subject = strip_tags($(this).text());
+					console.log(subject);
+					$(this).text(subject);
+				});
+			});
+		});
+		*/
+	</script>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container pull-left">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					<a class="brand" href="/">The Seoul</a>
+
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="/">Home</a></li>
+			  <li class="dropdown">
+			    <a class="dropdown-toggle" data-toggle="dropdown" href="#">SPARQL 질의<b class="caret"></b></a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			      <li><a role="menuitem" tabindex="-1" href="/endpoint/cf">문화시설</a></li>
+				  <li><a role="menuitem" tabindex="-1" href="/endpoint/kch">문화재</a></li>
+				  <li><a role="menuitem" tabindex="-1" href="/endpoint/ad">행정구역</a></li>
+			    </ul>
+			  </li>
+			  <li class="dropdown">
+			    <a class="dropdown-toggle" data-toggle="dropdown" href="#">관계 그래프<b class="caret"></b></a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			      <li><a role="menuitem" tabindex="-1" href="/relFinder/cf">문화시설</a></li>
+				  <li><a role="menuitem" tabindex="-1" href="/relFinder/kch">문화재</a></li>
+				  <li><a role="menuitem" tabindex="-1" href="/relFinder/ad">행정구역</a></li>
+			    </ul>
+			  </li>
+			  <li class="dropdown">
+			    <a  class="dropdown-toggle" data-toggle="dropdown" href="#">데이터 탐색<b class="caret"></b></a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			      <li><a role="menuitem" tabindex="-1" href="/exhibit/cf.html">문화시설</a></li>
+				  <li><a role="menuitem" tabindex="-1" href="/exhibit/ch.html">문화재</a></li>
+			    </ul>
+			  </li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+
+		<table id="frame" class="table">
+			<tr>
+				<td id="content" width="70%">
+					<div class="body">
+						<div class="clear">		
+							<p class="loading">
+								Loading...
+							</p>
+							<div class="exhibit-container" >
+							<div class="exhibit-content" ></div>
+						</div>
+				</td>
+				<td id="sidebar" width="25%">
+					<div class="exhibit-sidebar" >
+					<div class="exhibit-options" ></div>
+				</div>
+			</div>
+		</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>		

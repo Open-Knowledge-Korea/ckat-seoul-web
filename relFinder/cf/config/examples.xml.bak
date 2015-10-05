@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data>
+	<example>
+		<endpoint>seoul_cf</endpoint>
+		<object>
+			<label>롯데월드</label>
+			<uri>http://lod.datahub.kr/id/cf/Lotte-world</uri>
+		</object>
+		<object>
+			<label>롯데월드 시네마</label>
+			<uri>http://lod.datahub.kr/id/cf/Lotte-world-cinema</uri>
+		</object>
+	</example>
+	<example>
+		<endpoint>seoul_cf</endpoint>
+		<object>
+			<label>국립중앙박물관</label>
+			<uri>http://lod.datahub.kr/id/cf/National-museum-of-korea</uri>
+		</object>
+		<object>
+			<label>국립민속박물관</label>
+			<uri>http://lod.datahub.kr/id/cf/The-national-folk-museum-of-korea</uri>
+		</object>
+	</example>
+</data>

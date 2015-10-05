@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data>
+	<example>
+		<endpoint>seoul_ad</endpoint>
+		<object>
+			<label>명동</label>
+			<uri>http://lod.datahub.kr/id/ad/1102055-Myeong-dong</uri>
+		</object>
+		<object>
+			<label>소공동</label>
+			<uri>http://lod.datahub.kr/id/ad/1102052-Sogong-dong</uri>
+		</object>
+	</example>
+</data>

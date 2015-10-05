@@ -1,0 +1,96 @@
+#backgroundPopup{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:100%;
+width:100%;
+top:0;
+left:0;
+background:#000000;
+border:1px solid #cecece;
+z-index:1;
+}
+#popupContact{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+font-size:13px;
+
+}
+#popupContact h1{
+text-align:left;
+color:#6FA5FD;
+font-size:22px;
+font-weight:700;
+border-bottom:1px dotted #D3D3D3;
+padding-bottom:2px;
+margin-bottom:20px;
+}
+#popupContactClose{
+font-size:14px;
+line-height:14px;
+right:6px;
+top:4px;
+position:absolute;
+color:#6fa5fd;
+font-weight:700;
+display:block;
+}
+#button{
+text-align:center;
+margin:100px;
+}
+body {
+		font-family:    Tahoma, Arial, sans serif;
+		font-size:      8pt;
+		margin:         0;
+		padding:        0;
+		background:     #BCB79E;
+	}
+	table { font-size: 100%; }
+	tr { vertical-align: top; }
+	
+	#content { background: white; width: 100%; }
+	#title-panel { padding: 0.25in 0.5in; }
+	#top-panels {
+		padding:        0.5em 0.5in;
+		border-top:     1px solid #BCB79E;
+		border-bottom:  1px solid #BCB79E;
+		background:     #FBF4D3;
+	}
+	
+	.exhibit-tileView-body { list-style: none; }
+	.exhibit-collectionView-group-count { display: none; }
+	
+	div.name {
+		font-weight: bold;
+		font-size:   120%;
+	}
+	.relationship {
+		color:  #888;
+	}
+	div.thumbnail {
+		float:      left;
+		width:      8em;
+		height:     5em;
+		border:     1px solid #BCB79E;
+		background: #F0FFF0;
+		padding:    1em;
+		margin:     0.5em;
+		text-align: center;
+	}
+	div.cThumbnail {
+		float:      left;
+		width:      13em;
+		height:     10em;
+		border:     1px solid #BCB79E;
+		background: #F0FFF0;
+		padding:    1em;
+		margin:     0.5em;
+		text-align: center;
+	}
+	

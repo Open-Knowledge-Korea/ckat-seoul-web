@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery-test</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+// dom load를 막고 스크립트 실행
+$.holdReady(true);
+alert('hold ready');
+alert($('#text').html());
+ 
+// dom load 완료후 실행
+$(document).ready(function(){
+    alert('dom load 완료');
+    alert($('#text').html());
+});
+ 
+// $.holdReady 해제
+function test(){
+    $.holdReady(false);
+    alert('$.holdReady 끝');
+}
+</script>
+</head>
+<body>
+<div id="text" title="응?">나는 DOM element 야.</div>
+<input type="button" value="cancel the holdReady()" onclick="test();"/>
+</body>
+</html>

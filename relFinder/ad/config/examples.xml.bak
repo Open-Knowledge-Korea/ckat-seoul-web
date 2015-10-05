@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data>
+	<example>
+		<endpoint>seoul_ad</endpoint>
+		<object>
+			<label>명동</label>
+			<uri>http://dbpedia.org/resource/Albert_Einstein</uri>
+		</object>
+		<object>
+			<label>소공동</label>
+			<uri>http://dbpedia.org/resource/Kurt_G%C3%B6del</uri>
+		</object>
+	</example>
+	<example>
+		<endpoint>dbp</endpoint>
+		<object>
+			<label>Albert Einstein</label>
+			<uri>http://dbpedia.org/resource/Albert_Einstein</uri>
+		</object>
+		<object>
+			<label>Stuttgart</label>
+			<uri>http://dbpedia.org/resource/Stuttgart</uri>
+		</object>
+	</example>
+</data>

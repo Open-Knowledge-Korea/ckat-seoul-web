@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script language="javascript">
+	$.getJSON("./kch_whole.json", function (c) {	
+		var i, j, object, key;
+		var result = c;
+		
+		var input = {
+			items : [],
+			types : {},
+			properties : {}
+		};
+		for(i = 0; i < result.results.bindings.length; i++) {
+			object = result.results.bindings[i];
+			var temp = {};
+			for(j = 0; j < result.head.vars.length; j++) {
+				key = result.head.vars[j];
+				if(object[key] != null) {
+					temp[key] = object[key].value;
+				}	
+				else {
+					temp[key] = null;
+				}
+			}
+			input.items.push(temp);
+		}
+		var c = input;
+		console.log(JSON.stringify(c));
+
+		
+	});
+
+</script>
+</head>
+</body>
+</html>
