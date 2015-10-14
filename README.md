@@ -1,4 +1,4 @@
-# Introducing Connected-Data
+# CKAT(Connected Knowledge and Tools) #1 - Seoul City
 누구나 공개된 데이터를 활용할 수 있습니다. 그러나 데이터를 활용하기 위해 가공하는 과정이 복잡하고, 개별적으로 정제한 데이터는 공유되기 어렵습니다. 본 프로젝트는 공공 데이터를 정제하여 구조화하고, 관계를 정의하기 위해 Linked Data 기술을 적용합니다.
 
 # 오픈 데이터에서 링크드 데이터로 진화
