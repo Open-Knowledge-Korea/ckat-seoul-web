@@ -740,11 +740,11 @@
     <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
   </rdf:Description>
   
-  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/numberOfTongs">
+  <rdf:Description rdf:about="http://lod.datahub.kr/def/ad/numberOfTong">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">행정구역의 통 (숫자)</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:range rdf:datatype="http://www.w3.org/2001/XMLSchema#double" />
-    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">numberOfTongs</skos:prefLabel>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">numberOfTong</skos:prefLabel>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">통의 수</rdfs:label>
     <rdfs:domain rdf:resource="http://lod.datahub.kr/def/ad/KoreaAdministrativeDivisions"/>
   </rdf:Description>
